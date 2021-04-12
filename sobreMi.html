@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>sobreMi</title>
+    <link rel="icon" type="image/png" href="img/home/logofrag4.jpg">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Tu nombre">
+    <meta name="generator" content="Clojure">
+    <meta name="keywords" content="html, css, javascript">
+    <meta name="description" content="my description...">
+    <meta property="og:image" content="img/screenshot.png">
+    <meta property="og:title" content="The Rock">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:secure_url" content="https://...">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!--CSS-->
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 600px)">
+    <!--Javascript para mostrar menu cuando hacemos clic en el boton menu hamburguesa-->
+    <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.4.0/dist/ffnm.min.js" integrity="sha384-WsAoFj8H5Jl3+nG7ON5XXiozrADpSLshx/XdN7xu2GUVkJEZB5C3AGrFtdi6tARh" crossorigin="anonymous"></script>
+    <!--Animacion Fragmentos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__logo">
+            <a href="index.html" class="header__logo">
+                <img class="imagen__logo" src="img/header/logoDos.jpg" alt="logo">
+            </a>
+        </div>
+        <nav id="nav" class="nav")"> <!--IMPORTANTE EL id-->
+            <ul class="nav__ul">
+                <li class="nav__item">
+                    <a class="nav__link nav__link-colorUno" href="collage.html">COLLAGE</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link nav__link-colorUno" href="hipnoticBox.html">HIPNOTIC BOX</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link nav__link-colorUno" href="exposicion.html">EXPOSICIÓN</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link-colorDos animate__animated animate__slideInDown" href="contacto.html">CONTACTO</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link nav__link-colorTres" href="sobreMi.html">SOBRE MI</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link nav__link-colorTres" href="institutoBelleza.html">INSTITUTO de BELLEZA</a>
+                </li>
+            </ul>
+            <div class="nav__redes">
+                <a href="https://www.instagram.com/institutodebellezaexperimental/" target="_blank">
+                    <img class="nav__logo-instagram" src="img/header/instaBlack.png" alt="icono instagram">
+                </a>
+                <a href="https://www.facebook.com/LAS-Grecas-BAR-451911351660079/" target="_blank">
+                    <img class="nav__logo-facebook" src="img/header/faceBlack.png" alt="icono facebook">
+                </a>
+            </div>
+        </nav>
+        <!--Boton hamburguesa-->
+        <a is-click="class:toggle('nav--ver', '#nav')" class="nav__abrir-menu" href="#">
+            <button id="hamburger" class="hamburger hamburger--collapse" type="button" is-click="class:toggle('is-active', '#hamburger')">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </a>
+
+    </div>
+</header>
+<section class="main sobreMi">
+    <div class="container">
+        <h1 class="sobreMi__titulo animate__animated animate__slideInRight">SOBRE MI</h1>
+        <div class="sobreMi__informacion">
+            <div class="sobreMi__informacion-columna">
+                <img class="sobreMi__imagen" src="img/sobreMi/pedro.jpg" alt="Collage de foto de Pedro">
+                <hr class="separacion">
+                <p class="sobreMi__texto">
+                    &nbsp;&nbsp;&nbsp;Soy un artista plástico que vive y trabaja en la actualidad en Valencia. Originario de Sevilla, donde pase mi infancia y adolescencia, alejado del mundo del arte pero con un arañazo interior profundo y dramático, mientras estudiaba primaria en los años ochenta.
+                </p>
+                <p class="sobreMi__texto">
+                    &nbsp;&nbsp;&nbsp;Durante mis estudios de secundarios, de enfermería y auxiliar de vuelo siempre tuve la esperanza de matricularme en historia del arte, pero no conseguí mi objetivo, así que solo mantenía el recortado, visionado y posterior almacenaje de fotos que me volvían loco, pero siempre como hobby y acompañaba mis ratos creativos con música, que ambientaba esas tardes de concentración forjándose en mi un gran melómano. Finalmente me dedique a trabajar como camarero en restaurantes mi ciudad, después en Vigo, Barcelona y Palma de Mallorca donde regalo a mis allegados las composiciones de recortes que encuentro en revistas, pero nada más sin ninguna pretensión.
+                </p>
+                <hr class="separacion">
+            </div>
+            <div class="sobreMi__informacion-columna">
+                <p class="sobreMi__texto">
+                    &nbsp;&nbsp;&nbsp;Mi carrera transcurría en una dirección opuesta al arte, como responsable de los negocios de hostelería consumiendo mi tiempo libre y dando pie a crisis existenciales. Todo se calma cuando delante de mi escritorio imagino como componer con recortes todo lo que mi imaginación va fabricando. Descubro que el collage es dueño de su propio léxico, que es un arma de difusión ideológica con gran impacto visual y que retrata la realidad con atrevimiento y provocación y me permite expresarme con total libertad sin ningún tipo de atadura.
+                </p>
+                <p class="sobreMi__texto">
+                    &nbsp;&nbsp;&nbsp;Realizo un cartel publicitario para una firma de ropa que una amiga presentaba en la semana de la moda de Valencia, fue el primer momento en el que me expuse a la opinión pública, y el resultado fue muy favorable, eso supuso el empujón que necesitaba para centrarme más en la creación de collage. Me replanteo mis inquietudes y me involucró en la elaboración de mis proyectos artísticos, dedicando esfuerzo, tiempo libre y sobre todo mucha ilusión.
+                </p>
+                <hr class="separacion">
+                <img s class="sobreMi__imagen-collage" src="img/sobreMi/collagePedro.jpg" alt="Foto de collage de Pedro">
+                <hr class="separacion">
+            </div>
+            <div class="sobreMi__informacion-columna">
+                <p class="sobreMi__texto">
+                    &nbsp;&nbsp;&nbsp;Pero no fue hasta que me animo mi pareja, cuando empeze a enmarcar las obras que tenía guardadas y almacenadas en distintos rincones. Mi novio me muestra todo su apoyo y empieza a usar la palabra artista para dirigirse a mi, consiguiendo así vencer mi miedo a las críticas y reforzando mi seguridad y autoestima, nace mi marca, “COLLAGENO – INSTITUTO DE BELLEZA EXPERIMENTAL” y empiezo a exponer mi obra en diferentes cafés de Valencia.
+                    &nbsp;&nbsp;&nbsp;Observando al público que acude a mis exposiciones descubro que la gente tiene un conocimiento muy pobre del collage, relacionan esta disciplina artística con manualidades y no le dan la importancia que tiene, hasta que ven mis composiciones y el trabajo que hay detrás de cada una de ellas y se empieza a despertar algo entre las personas que admiran mis creaciones.
+                </p>
+                <p class="sobreMi__texto">
+                    &nbsp;&nbsp;&nbsp;En la actualidad soy copropietario del restaurante LAS GRECAS y dedico mi tiempo a la gestión del negocio y a mi arte, que lo expreso de diferentes maneras ya sea con la realización de collages, cajas decorativas o en la restauración de muebles dándoles mi toque personal y único.
+                </p>
+                <hr class="separacion">
+                <img class="sobreMi__imagen" src="img/sobreMi/pedro2.jpg" alt="collage de foto de Pedro">
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__contenido">
+            <a class="footer__contenido-link-facebook" href="https://www.facebook.com/LAS-Grecas-BAR-451911351660079/" target="_blank">
+                <img class="footer__contenido-facebook" src="img/footer/faceBlue.png" alt="Icono de facebook">
+            </a>
+            <a class="footer__contenido-link-instagram" href="https://www.instagram.com/institutodebellezaexperimental/" target="_blank">
+                <img class="footer__contenido-instagram" src="img/footer/instaBlue.png" alt="Icono de instagram">
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

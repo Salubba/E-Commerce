@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>fichaBoxSeis</title>
+    <link rel="icon" type="image/png" href="img/home/logofrag4.jpg">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Tu nombre">
+    <meta name="generator" content="Clojure">
+    <meta name="keywords" content="html, css, javascript">
+    <meta name="description" content="my description...">
+    <meta property="og:image" content="img/screenshot.png">
+    <meta property="og:title" content="The Rock">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:secure_url" content="https://...">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 600px)">
+    <!--JS--->
+    <script defer src="js/cesta.js"></script>
+    <!--Javascript para mostrar menu cuando hacemos clic en el boton menu hamburguesa-->
+    <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.4.0/dist/ffnm.min.js" integrity="sha384-WsAoFj8H5Jl3+nG7ON5XXiozrADpSLshx/XdN7xu2GUVkJEZB5C3AGrFtdi6tARh" crossorigin="anonymous"></script>
+    <!--Carrusel Imagenes-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--Animacion titulo-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__logo">
+            <a href="index.html" class="header__logo">
+                <img class="imagen__logo" src="img/header/logoDos.jpg" alt="logo">
+            </a>
+        </div>
+        <nav id="nav" class="nav")"> <!--IMPORTANTE EL id-->
+        <ul class="nav__ul">
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorUno" href="collage.html">COLLAGE</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorUno" href="hipnoticBox.html">HIPNOTIC BOX</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorUno" href="exposicion.html">EXPOSICIÓN</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link-colorDos animate__animated animate__slideInDown" href="contacto.html">CONTACTO</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorTres" href="sobreMi.html">SOBRE MI</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorTres" href="institutoBelleza.html">INSTITUTO de BELLEZA</a>
+            </li>
+        </ul>
+        <div class="nav__redes">
+            <a href="https://www.instagram.com/institutodebellezaexperimental/" target="_blank">
+                <img class="nav__logo-instagram" src="img/header/instaBlack.png" alt="icono instagram">
+            </a>
+            <a href="https://www.facebook.com/LAS-Grecas-BAR-451911351660079/" target="_blank">
+                <img class="nav__logo-facebook" src="img/header/faceBlack.png" alt="icono facebook">
+            </a>
+        </div>
+        </nav>
+        <!--Boton hamburguesa-->
+        <a is-click="class:toggle('nav--ver', '#nav')" class="nav__abrir-menu" href="#">
+            <button id="hamburger" class="hamburger hamburger--collapse" type="button" is-click="class:toggle('is-active', '#hamburger')">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </a>
+
+    </div>
+</header>
+<body>
+<section class="boxSeis">
+    <div class="container">
+        <h1 class="collage__titulo animate__animated animate__slideInLeft">HIPNOTIC BOX&nbsp;</h1>
+        <div class="boxSeis__container">
+            <div class="carousel">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img class="swiper-img" src="img/hipnoticBox/Box6.jpg" alt="foto movil">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-img" src="img/hipnoticBox/Box6b.jpg" alt="foto movil">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-img" src="img/hipnoticBox/Box6c.jpg" alt="foto movil">
+                        </div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="boxSeis__caracteristicas">
+                <article id="tituloBoxSeis" class="articulos"
+                         data-nombre="SEA STORM"
+                         data-precio="300">
+                <h2 id="tituloBoxSeis" class="boxSeis__titulo-collage">"SEA STORM"</h2>
+                <h2 class="boxSeis__dimension">20 x 35 CM </h2>
+                <h2 id="precioBoxSeis" class="boxSeis__precio animate__animated animate__slideInRight">&nbsp;300 €</h2>
+                <div class="boxSeis__botones">
+                    <a href="#">
+                        <img id="cestaBoxSeis" class="boxSeis__cesta" src="img/cesta/cesta.png" alt="icono de cesta">
+                    </a>
+                    <a href="cesta.html">
+                        <img class="boxSeis__euro" src="img/catalogo/euro.png" alt="Icono Euro">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__contenido">
+            <a class="footer__contenido-link-facebook" href="https://www.facebook.com/LAS-Grecas-BAR-451911351660079/" target="_blank">
+                <img class="footer__contenido-facebook" src="img/footer/faceGreen.png" alt="Icono de facebook">
+            </a>
+            <a class="footer__contenido-link-instagram" href="https://www.instagram.com/institutodebellezaexperimental/" target="_blank">
+                <img class="footer__contenido-instagram" src="img/footer/instaGreen.png" alt="Icono de instagram">
+            </a>
+        </div>
+    </div>
+</footer>
+<script>
+    //Variables captura informacion articulo
+    const tituloBoxSeis = document.querySelector('#tituloBoxSeis');
+    const cestaBoxSeis = document.querySelector('#cestaBoxSeis');
+    let cesta = [];
+    const miCesta = window.localStorage;
+
+    var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    })
+
+
+    //Funcion captura informacion articulo
+    function anyadirCestaBoxSeis () {
+        //Anyadir articulos a cesta
+        cesta.push({
+            nombre: tituloBoxSeis.dataset.nombre,
+            precio: tituloBoxSeis.dataset.precio
+        })
+        //Guardar articulo y precio en el local storage
+        miCesta.setItem('articulo',JSON.stringify(cesta));
+        console.log(miCesta);
+    }
+
+    //Funcion para ir acumulando articulos en la cesta
+    function cargarCerstaAnterior () {
+        if (miCesta.getItem('articulo') !== null) {
+            cesta = JSON.parse(miCesta.getItem('articulo'));
+        }
+    }
+
+    //Evento
+    cargarCerstaAnterior();
+    cestaBoxSeis.addEventListener('click', anyadirCestaBoxSeis);
+</script>
+</body>
+</html>

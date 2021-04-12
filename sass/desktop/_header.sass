@@ -1,0 +1,44 @@
+// header
+.header
+  background-color: $blanco
+  .imagen__logo
+    box-shadow: 0 0 14px 4px transparentize($negro, .5)
+
+  .nav
+    text-align: center
+    &__abrir-menu, &__cerrar, &__redes
+      display: none
+    &__link-colorUno
+      display: block
+      background-color: $verde
+      color: $blanco
+      font-size: .7rem
+      border-radius: .5rem
+      margin: 0 .5rem
+      height: 2.5rem
+      width: 4rem
+    &__link-colorDos
+      text-decoration: none
+      padding: 1rem
+      font-weight: bold
+      display: block
+      color: $blanco
+      background-color: $morado
+      font-size: .7rem
+      border-radius: 50%
+      height: 4rem
+      width: 4rem
+    &__link-colorTres
+      display: block
+      background-color: $azulOscuro
+      color: $blanco
+      font-size: .7rem
+      border-radius: .5rem
+      margin: 0 .5rem
+      height: 2.5rem
+      width: 4rem
+    &__link-colorDos:hover
+      background-color: transparentize($negro, .7)
+      color: $negro
+      border-radius: 50%
+      transition: 1s

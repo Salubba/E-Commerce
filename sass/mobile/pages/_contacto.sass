@@ -1,0 +1,128 @@
+.contacto
+  background:
+    image: url(../img/contacto/fondoSerpiente.jpg)
+  &__titulo
+    &__titulo
+    display: block
+    text-align: left
+    padding-top: 6rem
+    color: $blanco
+    font-size: 2rem
+    background-color: $morado
+    padding-left: .5rem
+  &__parrafoUno
+    margin-top: 0
+    text-align: center
+    color: $morado
+    font-weight: bold
+    font-size: 1.2rem
+  &__parrafoDos
+    text-align: center
+    color: $morado
+    font-weight: bold
+    font-size: 1.2rem
+    margin-bottom: 0
+  &__informacion
+    display: flex
+    flex-direction: column
+  &__columna
+    margin-top: 2rem
+    text-align: center
+    width: 19rem
+    padding-left: 1.5rem
+  &__combo-imgUno
+    display: none
+  &__combo-imgDos
+    margin-top: 2rem
+    width: 60%
+  &__form
+    &-input
+      width: 5rem
+      height: 2.5rem
+      border: 2px solid $morado
+      box-shadow: 4px 4px 9px 0 transparentize($morado, .5)
+      width: 100%
+      &:focus
+        outline: 0
+    &-textarea
+      width: 5rem
+      height: 6rem
+      border: 2px solid $morado
+      box-shadow: 4px 4px 9px 0 transparentize($morado, .5)
+      margin-bottom: 2rem
+      width: 100%
+      &:focus
+        outline: 0
+    &-label
+      display: block
+      padding-top: 1rem
+      color: $morado
+      font-weight: bold
+      margin-bottom: 2rem
+    &-checkbox
+      height: 1.3rem
+      width: 1.3rem
+    &-boton
+      display: flex
+      flex-direction: column
+    &-imagenMarco
+      display: none
+    &-ley
+      display: flex
+      justify-content: space-between
+      border-top: 20px solid $morado
+    &-link
+      font-size: .9rem
+      margin-top: 3rem
+      margin-bottom: 2rem
+      display: block
+      color: $morado
+    &-imagen
+      display: none
+    &-mensaje
+      color: red
+      list-style: none
+      font-weight: bold
+  .boton__enviar-contacto
+    width: 7.5rem
+    height: 7rem
+    border-radius: .5rem
+    border: none
+    border: 2px solid $morado
+    margin-bottom: 2rem
+  .boton__enviar-imagen
+    width: 100%
+.ocultar
+  display: none !important
+
+.boton__cookies
+  width: 8rem
+  height: 2.5rem
+  border-radius: .4rem
+  background-color: $morado
+  color: $blanco
+  font-size: .7rem
+  font-weight: bold
+.texto__cookies
+  color: $morado
+  font-size: .8rem
+.box__cookies
+  padding: .5rem
+  width: 18rem
+  height: 12rem
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  position: absolute
+  top: 18rem
+  left: 1.5rem
+  right: auto
+  border: 5px solid $morado
+  border-radius: 1rem
+  background-color: $rosa
+  font-weight: bold
+.enlace__cookies
+  text-decoration: none
+  color: $negro

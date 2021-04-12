@@ -1,0 +1,39 @@
+.factura
+  .container
+    background:
+      image: url(../img/factura/rombos.jpg)
+  &__contenido
+    display: flex
+    flex-direction: column
+    &-marcos
+      display: flex
+      flex-direction: column
+      align-items: center
+    &-imgUno
+      display: none
+    &-imgDos
+      width: 45%
+    &-formulario
+      height: 28rem
+  &__form
+    text-align: center
+    &-input
+      height: 2.5rem
+      width: 85%
+      border: 2px solid $verde
+      box-shadow: 4px 4px 9px 0 transparentize($verde, .2)
+      &:focus
+        outline: 0
+  .boton__enviar-factura
+    margin-top: 2rem
+    width: 5.5rem
+    height: 5rem
+    margin-bottom: 1rem
+    border: 2px solid $verde
+    border-radius: .5rem
+  .boton__enviar-facturaImg
+    width: 100%
+  .boton__container
+    display: block
+    border-bottom: 20px solid $verde
+

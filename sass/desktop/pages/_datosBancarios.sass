@@ -1,0 +1,180 @@
+.datosBancarios
+  .container
+    background:
+      image: url(../img/datosBancarios/vaca.jpg)
+    z-index: 0
+    position: relative
+  &__titulo
+    &__titulo
+    display: block
+    text-align: right
+    padding-top: 9rem
+    color: $blanco
+    font-size: 2rem
+    background-color: $verde
+  &__contenido-form
+    display: flex
+    justify-content: center
+  &__form
+    text-align: center
+    margin-top: .5rem
+    width: 22rem
+    border: 1px solid $verde
+    margin-bottom: 5rem
+    &-input
+      width: 5rem
+      height: 1.5rem
+      border: 2px solid $verde
+      box-shadow: 4px 4px 9px 0 transparentize($verde, .5)
+      width: 80%
+    &-tarjeta
+      width: 3.7rem
+      height: 1.5rem
+      border: 2px solid $verde
+      box-shadow: 4px 4px 9px 0 transparentize($verde, .5)
+    &-titulo
+      color: $verde
+      font-size: .8rem
+      font-weight: bold
+      padding-top: 1rem
+    &-fechaCaducidad
+      display: flex
+      justify-content: space-between
+      grid-gap: 1rem
+      width: 16rem
+      margin-left: 3rem
+      &-input
+        height: 1.5rem
+        border: 2px solid $verde
+        box-shadow: 4px 4px 9px 0 transparentize($verde, .5)
+        width: 80%
+    &-control
+      display: flex
+      justify-content: center
+      grid-gap: 2rem
+      &-titulo
+        color: $verde
+        font-weight: bold
+        font-size: .8rem
+        margin-top: 1.4rem
+      &-input
+        height: 1.6rem
+        border: 2px solid $verde
+        box-shadow: 4px 4px 9px 0 transparentize($verde, .5)
+        width: 4rem
+    &-botones
+      display: flex
+      justify-content: center
+      align-items: center
+      grid-gap: 3rem
+    &-link
+     text-align: right
+     margin-right: 3rem
+    &-imglink
+      width: 40%
+  .boton__enviar-datosBancarios
+    height: 5.4rem
+    margin-left: 2rem
+    padding-right: 1rem
+    border-radius: .5rem
+    border: 2px solid $verde
+  .boton__enviar-datosBancarios:hover
+    box-shadow: 4px 4px 9px 0 transparentize($verde, .1)
+  .boton__enviar-datosBancariosImg
+    width: 100%
+
+
+.docFactura
+  display: flex
+  flex-direction: column
+  text-align: left
+  background:
+    image: url(../img/factura/rombos.jpg)
+    size: cover
+  width: 46.9rem
+  height: 33rem
+  z-index: 2
+  position: absolute
+  top: 11.3rem
+  left: 22rem
+  right: auto
+  margin-left: auto
+  margin-right: auto
+.docFacturaBox1
+  display: flex
+  justify-content: space-between
+.ocultar
+  display: none
+.mostrar
+  display: block
+.ventanaFormFactura
+  width: 50%
+  height: 20rem
+  display: flex
+  flex-direction: column
+  text-align: center
+.ventanaFormFactura-titulo
+  color: $morado
+.ventanaFormFactura-input
+  width: 15rem
+  height: 1.6rem
+  border: 2px solid $verde
+  box-shadow: 4px 4px 9px 0 transparentize($verde, .2)
+.ventanaFormFactura-cerrar
+  margin-top: 1rem
+  margin-left: 1rem
+  background-color: transparent
+  width: 2rem
+  height: 2rem
+  border-radius: 50%
+  color: $verde
+  border: 3px solid $verde
+  font-weight: bold
+
+.ventanaFormFactura-enviar
+  width: 4.5rem
+  height: 4rem
+  margin-bottom: 2rem
+  border-radius: .5rem
+  border: 2px solid $verde
+.ventanaFormFactura-img
+  width: 90%
+.ventanaResumenPedido
+  display: flex
+  flex-direction: column
+  width: 50%
+  align-items: center
+.ventanaResumenPedidoBox
+  text-align: center
+  margin-top: 1rem
+  border: 2px solid $verde
+  border-radius: .5rem
+.ventanaResumenPedidoArticulos
+  width: 19rem
+  height: 10rem
+.ventanaResumenPedido-subtitulo
+  color: $verde
+.ventanaResumenPedidoTotal
+  width: 19rem
+  height: 1.5rem
+.cesta__factura
+  list-style: none
+  font-size: .8rem
+  color: $azulOscuro
+  text-align: left
+  margin-left: 1rem
+  font-weight: bold
+  margin-top: .3rem
+.total__factura
+  text-align: center
+  color: $azulOscuro
+  font-size: 1rem
+  font-weight: bold
+.error
+  width: 25rem
+  font-size: .7rem
+  margin: 0
+  color: red
+  list-style: none
+  font-weight: bold
+  text-align: left

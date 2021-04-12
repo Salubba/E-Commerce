@@ -1,0 +1,44 @@
+// Estilos generales
+
+body
+  font-family: "MuseoModernoRegular"
+
+h1, h2, h3, h4, h5, h6
+  font-family: "MuseoModernoBlack"
+
+.container
+  max-width: $anchura_container
+  margin: 0 auto
+  padding: 0
+
+.header
+  position: fixed
+  z-index: 200 //para que se vuelva a ver el menu de arriba
+  //para fijar menu, pegado a los dos lados y en la parte de arriba
+  top: 0
+  left: 0
+  right: 0
+  padding: 1rem 0
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  .imagen__logo
+    width: 50%
+    border-radius: .5rem
+  .nav //menu
+    &__ul
+      display: flex
+      justify-content: flex-end
+      list-style: none
+      padding: 0
+    &__link
+      text-decoration: none
+      padding: 1rem
+      font-weight: bold
+    .nav__link:hover
+      background-color: transparentize($negro, .7)
+      color: $negro
+      border-radius: .5rem
+      transition: 1s

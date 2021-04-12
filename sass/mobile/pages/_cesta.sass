@@ -1,0 +1,88 @@
+.cesta
+  .container
+    background:
+      image: url(../img/cesta/pataGallo.jpg)
+      size: cover
+    height: 50rem
+  &__titulo
+    display: block
+    text-align: right
+    padding-top: 6rem
+    color: $blanco
+    font-size: 2rem
+    background-color: $verde
+  &__subtitulo
+    color: $verde
+    font-size: 1.2rem
+  &__subtitulo2
+    color: $verde
+    font-size: 1.2rem
+    margin-bottom: .2rem
+  &__articulos
+    width: 14rem
+    list-style: none
+  &__box
+    display: flex
+    flex-direction: column
+  &__box2
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__lista
+    width: 18rem
+    height: 15rem
+    background-color: transparentize($rosa, .3)
+    border: 2px solid $verde
+    box-shadow: 4px 4px 9px 0 transparentize($verde, .2)
+    border-radius: .5rem
+  &__total
+    width: 7rem
+    height: 2rem
+    background-color: transparentize($rosa, .3)
+    border: 2px solid $verde
+    box-shadow: 4px 4px 9px 0 transparentize($verde, .2)
+    color: $verde
+    text-align: center
+    font-weight: bold
+    padding-top: .2rem
+    border-radius: .5rem
+    font-size: 1.5rem
+    margin-top: 1rem
+  &__box3
+    display: flex
+    flex-direction: column
+    text-align: center
+  &__icono-tarjeta
+    width: 25%
+    margin-top: 3rem
+  &__box4
+    border-bottom: 14px solid $verde
+    height: 10rem
+  &__marco1
+    display: none
+  &__marco2
+    display: none
+  &__box6
+    display: flex
+    flex-direction: row
+    grid-gap: .3rem
+    text-align: center
+  &__euro
+    font-size: 1.5rem
+    color: $verde
+    font-weight: bold
+  &__li
+    display: flex
+    justify-content: space-between
+    color: $verde
+    font-weight: bold
+    margin-top: .3rem
+  &__eliminar
+    width: 1.5rem
+    height: 1.5rem
+    border-radius: 50%
+    font-size: .8rem
+    background: transparent
+    border: 2px solid $morado
+    color: $morado
+    font-weight: bold

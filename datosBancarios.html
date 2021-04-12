@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>datosBancarios</title>
+    <link rel="icon" type="image/png" href="img/home/logofrag4.jpg">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Tu nombre">
+    <meta name="generator" content="Clojure">
+    <meta name="keywords" content="html, css, javascript">
+    <meta name="description" content="my description...">
+    <meta property="og:image" content="img/screenshot.png">
+    <meta property="og:title" content="The Rock">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:secure_url" content="https://...">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!--CSS-->
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 600px)">
+    <!--JS--->
+    <script defer src="js/factura.js"></script>
+    <!--Javascript para mostrar menu cuando hacemos clic en el boton menu hamburguesa-->
+    <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.4.0/dist/ffnm.min.js" integrity="sha384-WsAoFj8H5Jl3+nG7ON5XXiozrADpSLshx/XdN7xu2GUVkJEZB5C3AGrFtdi6tARh" crossorigin="anonymous"></script>
+    <!--Animacion Fragmentos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__logo">
+            <a href="index.html" class="header__logo">
+                <img class="imagen__logo" src="img/header/logoDos.jpg" alt="logo">
+            </a>
+        </div>
+        <nav id="nav" class="nav")"> <!--IMPORTANTE EL id-->
+        <ul class="nav__ul">
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorUno" href="collage.html">COLLAGE</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorUno" href="hipnoticBox.html">HIPNOTIC BOX</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorUno" href="exposicion.html">EXPOSICIÓN</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link-colorDos animate__animated animate__slideInDown" href="contacto.html">CONTACTO</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorTres" href="sobreMi.html">SOBRE MI</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorTres" href="institutoBelleza.html">INSTITUTO de BELLEZA</a>
+            </li>
+        </ul>
+        <div class="nav__redes">
+            <a href="https://www.instagram.com/institutodebellezaexperimental/" target="_blank">
+                <img class="nav__logo-instagram" src="img/header/instaBlack.png" alt="icono instagram">
+            </a>
+            <a href="https://www.facebook.com/LAS-Grecas-BAR-451911351660079/" target="_blank">
+                <img class="nav__logo-facebook" src="img/header/faceBlack.png" alt="icono facebook">
+            </a>
+        </div>
+        </nav>
+        <!--Boton hamburguesa-->
+        <a is-click="class:toggle('nav--ver', '#nav')" class="nav__abrir-menu" href="#">
+            <button id="hamburger" class="hamburger hamburger--collapse" type="button" is-click="class:toggle('is-active', '#hamburger')">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </a>
+
+    </div>
+</header>
+<body>
+<seccion class="datosBancarios">
+    <div id="contenedor" class="container">
+        <h1 class="datosBancarios__titulo animate__animated animate__slideInLeft">DATOS BANCARIOS&nbsp;</h1>
+        <div class="datosBancarios__contenido-form">
+            <form class="datosBancarios__form">
+                    <p>
+                        <input class="datosBancarios__form-input" type="text" name="Nombre" value="" placeholder="NOMBRE (TITULAR TARJETA)">
+                    </p>
+                    <p class="datosBancarios__form-titulo">NUMERO DE LA TARJETA</p>
+                    <p>
+                        <input class="datosBancarios__form-tarjeta" type="text" name="Numero-tarjeta" value="" maxlength="4">
+                        <input class="datosBancarios__form-tarjeta" type="text" name="Numero-tarjeta" value="" maxlength="4">
+                        <input class="datosBancarios__form-tarjeta" type="text" name="Numero-tarjeta" value="" maxlength="4">
+                        <input class="datosBancarios__form-tarjeta" type="text" name="Numero-tarjeta" value="" maxlength="4">
+                    </p>
+                    <p class="datosBancarios__form-titulo">FECHA DE CADUCIDAD DE LA TARJETA</p>
+                    <div class="datosBancarios__form-fechaCaducidad">
+
+                        <p>
+                            <input class="datosBancarios__form-fechaCaducidad-input" type="text" name="Mes" value="" placeholder="MES" maxlength="2">
+                        </p>
+                        <p>
+                            <input class="datosBancarios__form-fechaCaducidad-input" type="text" name="Año" value="" placeholder="AÑO" maxlength="2">
+                        </p>
+                    </div>
+                    <div class="datosBancarios__form-control">
+                        <p class="datosBancarios__form-control-titulo">DIGITOS DE CONTROL</p>
+                        <p>
+                            <input class="datosBancarios__form-control-input" type="text" name="Digitos control" value="" placeholder="CVC" maxlength="3">
+                        </p>
+                    </div>
+                    <div class="datosBancarios__form-botones">
+                            <p>
+                                <button class="boton__enviar-datosBancarios" type="submit">
+                                    <img class="boton__enviar-datosBancariosImg"  src="img/datosBancarios/pago.png" alt="Icono Sobre">
+                                </button>
+                            </p>
+                            <a id="abrirVentana" href="#ventana.html" class="datosBancarios__form-link">
+                                <img  class="datosBancarios__form-imglink"  src="img/datosBancarios/factura.png" alt="Icono Sobre">
+                            </a>
+                    </div>
+                </div>
+            </form>
+            <div id="ventana" class="docFactura ocultar animate__animated animate__fadeInRight">
+                <button id="cerrarFactura" class="ventanaFormFactura-cerrar">X</button>
+                <div class="docFacturaBox1">
+                    <form class="ventanaFormFactura">
+                        <h2 class="ventanaFormFactura-titulo">Factura</h2>
+                        <p>
+                            <input id="nombreFactura" class="ventanaFormFactura-input" type="text" name="Nombre" value="" placeholder="NOMBRE *">
+                        </p>
+                        <ul id="errorNombreFactura" class="error"></ul>
+                        <p>
+                            <input id="cifFactura" class="ventanaFormFactura-input" type="text" name="CIF" value="" placeholder="CIF *">
+                        </p>
+                        <ul id="errorCifFactura" class="error"></ul>
+                        <p>
+                            <input id="direccionFactura" class="ventanaFormFactura-input" type="text" name="Direccion" value="" placeholder="DIRECCIÓN *">
+                        </p>
+                        <ul id="errorDireccionFactura" class="error"></ul>
+                        <p>
+                            <input id="emailFactura" class="ventanaFormFactura-input" type="text" name="E-mail" value="" placeholder="E-MAIL *">
+                        </p>
+                        <ul id="errorEmailFactura" class="error"></ul>
+                        <div class="ventanaFormFactura-container">
+                            <p>
+                                <button id="enviarFactura" class="ventanaFormFactura-enviar" type="submit">
+                                    <img class="ventanaFormFactura-img"  src="img/factura/envio.png" alt="Icono Sobre">
+                                </button>
+                            </p>
+                        </div>
+                    </form>
+                    <div class="ventanaResumenPedido">
+                        <h2 class="ventanaFormFactura-titulo">Resumen Pedido</h2>
+                        <div class="ventanaResumenPedidoBox">
+                            <h3 class="ventanaResumenPedido-subtitulo">Articulos</h3>
+                            <div id="listaArticulosFactura" class="ventanaResumenPedidoArticulos"></div>
+                            <h3 class="ventanaResumenPedido-subtitulo">Total</h3>
+                            <div id="totalFactura" class="ventanaResumenPedidoTotal"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</seccion>
+<script>
+    const ventana = document.querySelector('#ventana')
+    const cerrarFactura = document.querySelector('#cerrarFactura')
+    const abrirVentana = document.querySelector('#abrirVentana')
+    const contenedor = document.querySelector('#contenedor')
+
+    function mostrarVentana() {
+        ventana.classList.remove('ocultar');
+        ventana.classList.add('mostrar');
+        contenedor.style.background = '#fff';
+
+
+    }
+
+    function ocultarVentana() {
+        ventana.classList.remove('mostrar');
+        ventana.classList.add('ocultar');
+        contenedor.style.background = '#f5e1f2'
+
+    }
+
+    cerrarFactura.addEventListener('click', ocultarVentana);
+    abrirVentana.addEventListener('click', mostrarVentana);
+
+</script>
+</body>
+</html>

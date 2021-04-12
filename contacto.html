@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>contacto</title>
+    <link rel="icon" type="image/png" href="img/home/logofrag4.jpg">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Tu nombre">
+    <meta name="generator" content="Clojure">
+    <meta name="keywords" content="html, css, javascript">
+    <meta name="description" content="my description...">
+    <meta property="og:image" content="img/screenshot.png">
+    <meta property="og:title" content="The Rock">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:secure_url" content="https://...">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!--CSS-->
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 600px)">
+    <!--JS--->
+    <script defer src="js/contacto.js"></script>
+    <!--Javascript para mostrar menu cuando hacemos clic en el boton menu hamburguesa-->
+    <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.4.0/dist/ffnm.min.js" integrity="sha384-WsAoFj8H5Jl3+nG7ON5XXiozrADpSLshx/XdN7xu2GUVkJEZB5C3AGrFtdi6tARh" crossorigin="anonymous"></script>
+    <!--Animacion Fragmentos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__logo">
+            <a href="index.html" class="header__logo">
+                <img class="imagen__logo" src="img/header/logoDos.jpg" alt="logo">
+            </a>
+        </div>
+        <nav id="nav" class="nav")"> <!--IMPORTANTE EL id-->
+        <ul class="nav__ul">
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorUno" href="collage.html">COLLAGE</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorUno" href="hipnoticBox.html">HIPNOTIC BOX</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorUno" href="exposicion.html">EXPOSICIÓN</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link-colorDos animate__animated animate__slideInDown" href="contacto.html">CONTACTO</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorTres" href="sobreMi.html">SOBRE MI</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorTres" href="institutoBelleza.html">INSTITUTO de BELLEZA</a>
+            </li>
+        </ul>
+        <div class="nav__redes">
+            <a href="https://www.instagram.com/institutodebellezaexperimental/" target="_blank">
+                <img class="nav__logo-instagram" src="img/header/instaBlack.png" alt="icono instagram">
+            </a>
+            <a href="https://www.facebook.com/LAS-Grecas-BAR-451911351660079/" target="_blank">
+                <img class="nav__logo-facebook" src="img/header/faceBlack.png" alt="icono facebook">
+            </a>
+        </div>
+        </nav>
+        <!--Boton hamburguesa-->
+        <a is-click="class:toggle('nav--ver', '#nav')" class="nav__abrir-menu" href="#">
+            <button id="hamburger" class="hamburger hamburger--collapse" type="button" is-click="class:toggle('is-active', '#hamburger')">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </a>
+
+    </div>
+</header>
+<body>
+<section class="contacto container">
+        <h1 class="contacto__titulo animate__animated animate__slideInRight">CONTACTO&nbsp;</h1>
+        <div class="contacto__informacion">
+            <div class="contacto__columna">
+                <p class="contacto__parrafoUno">
+                    Si quieres conocer mi trabajo, o para cualquier propuesta, no lo dudes contacta conmigo
+                </p>
+                <p class="contacto__parrafoDos">
+                    ¡ GRACIAS !
+                </p>
+                <div class="contacto__combo">
+                    <img class="contacto__combo-imgUno" src="img/contacto/mano.jpg" alt="Foto de collage">
+                    <img class="contacto__combo-imgDos" src="img/contacto/marco2.png" alt="Marco Dorado Barroco">
+                </div>
+            </div>
+            <div class="contacto__columna">
+                    <div class="contacto__item-formulario">
+                        <form action="https://formspree.io/f/xpzoggqz" method="post" id="formulario" class="contacto__form">
+                            <p>
+                                <input id="nombre" class="contacto__form-input" type="text" name="Nombre" value="" placeholder="NOMBRE *">
+                            </p>
+                            <ul id="errorNombre" class="contacto__form-mensaje"></ul>
+                            <p>
+                                <input id="direccion" class="contacto__form-input" type="text" name="Email" value="" placeholder="E - MAIL *">
+                            </p>
+                            <ul id="errorMail" class="contacto__form-mensaje"></ul>
+                            <p>
+                                <input class="contacto__form-input" type="text" name="Asunto" value="" placeholder="ASUNTO">
+                            </p>
+                            <p>
+                                <textarea id="mensaje" class="contacto__form-textarea" name="Mensaje" id="" placeholder="MENSAJE *"></textarea>
+                            </p>
+                            <ul id="errorMensaje" class="contacto__form-mensaje"></ul>
+                            <p>
+                                <label class="contacto__form-label">
+                                    <input id="check" class="contacto__form-checkbox" type="checkbox" name="legal">&nbsp;&nbsp;&nbsp;ACEPTO LAS CONDICIONES DE USO Y PRIVACIDAD.
+                                </label>
+                            </p>
+                            <ul id="errorCheck" class="contacto__form-mensaje"></ul>
+                            <div class="contacto__form-boton">
+                                <p>
+                                    <button id="botonEnviar" class="boton__enviar-contacto" type="submit" value="Send">
+                                        <img class="boton__enviar-imagen"  src="img/contacto/enviar.png" alt="Icono Sobre">
+                                    </button>
+                                </p>
+                                <img class="contacto__form-imagen" src="img/contacto/marco.png" alt="Marco Barroco Dorado">
+                            </div> 
+                            <div class="contacto__form-ley">
+                                <a class="contacto__form-link" href="avisoLegal.html">Aviso Legal</a>
+                                <a class="contacto__form-link" href="politicaCookies.html">Politica de Cookies</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </div>
+</section>
+<section class="aviso__cookies">
+    <div class="box__cookies animate__animated animate__zoomIn" id="aviso">
+        <p class="texto__cookies">&nbsp;&nbsp;Utilizamos cookies propias y de terceros para mejorar la navegación. &nbsp;Acepto el uso de cookies.</p>
+        <p class="texto__cookies">Puedes obtener mas información <a href="politicaCookies.html" class="enlace__cookies">aqui.</a></p>
+        <p>
+            <button id="aceptar" class="boton__cookies">ACEPTAR</button>
+        </p>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__contenido">
+            <a class="footer__contenido-link-facebook" href="https://www.facebook.com/LAS-Grecas-BAR-451911351660079/" target="_blank">
+                <img class="footer__contenido-facebook" src="img/footer/facePink.png" alt="Icono de facebook">
+            </a>
+            <a class="footer__contenido-link-instagram" href="https://www.instagram.com/institutodebellezaexperimental/" target="_blank">
+                <img class="footer__contenido-instagram" src="img/footer/instaPink.png" alt="Icono de instagram">
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

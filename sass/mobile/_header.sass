@@ -1,0 +1,71 @@
+// header
+.header
+  background-color: $blanco
+  .imagen__logo
+    margin-left: 1rem
+    box-shadow: 0 0 14px 4px transparentize($negro, .5)
+  .container
+    height: 5rem
+  .nav
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: $blanco
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    transition: .5s
+    transform: translateX(-100vw) // lo que mide de ancho me lo llevas a la izq
+    &__cerrar-img
+      width: 20%
+    &--ver
+      transform: translateX(0) //la clase ver permite ver el menu
+    &__ul
+      padding-top: 8rem
+      flex-direction: column
+      text-align: right
+    &__link
+      display: block
+      font-size: 1.5rem
+      padding: 1rem
+    &__link-colorUno
+      color: $verde
+    &__link-colorDos
+      display: block
+      color: $morado
+      font-weight: bold
+      text-decoration: none
+      font-size: 1.5rem
+      padding-top: 1rem
+      padding-right: 1rem
+      padding-bottom: 1rem
+    &__link-colorTres
+      color: $azulOscuro
+    &__abrir-menu-img
+      margin-right: 1.5rem
+      width: 5rem
+    &__cerrar
+      display: block
+      width: 2rem
+    &__cerrar-img
+      width: 150%
+    &__redes
+      margin-bottom: 5rem
+      display: flex
+      flex-direction: row
+      text-align: right
+    &__logo-instagram
+      width: 18%
+    &__logo-facebook
+      width: 18%
+      padding-right: 2.5rem
+
+.hamburger-box
+  margin-right: 1rem
+*:focus
+  outline: none
+
+

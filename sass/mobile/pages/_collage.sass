@@ -1,0 +1,96 @@
+.collage
+  .container
+    background:
+      image: url(../img/catalogo/acuarela2.jpg)
+      size: cover
+    height: 95rem
+  &__titulo
+    display: block
+    text-align: right
+    padding-top: 6rem
+    color: $blanco
+    font-size: 2rem
+    background-color: $verde
+  .catalogo
+    display: grid
+    grid-template-columns: repeat(6, 2.5rem)
+    grid-template-rows: repeat(26, 3rem)
+    grid-gap: .5rem
+    margin-right: 2rem
+    &__uno
+      grid-column: 2 / 5
+      grid-row: 1 / 3
+    &__imagen-uno
+      width: 100%
+    &__dos
+      grid-column: 5 / 8
+      grid-row: 2 / 4
+      margin-bottom: 1rem
+    &__imagen-dos
+      width: 100%
+    &__tres
+      grid-column: 2 / 5
+      grid-row: 4 / 6
+    &__imagen-tres
+      width: 100%
+    &__cuatro
+      grid-column: 5 / 9
+      grid-row: 4 / 6
+    &__imagen-cuatro
+      width: 90%
+      border: 5px solid $verde
+    &__cinco
+      grid-column: 2 / 4
+      grid-row: 7 / 9
+    &__imagen-cinco
+      width: 100%
+    &__seis
+      grid-column: 4 / 7
+      grid-row: 6 / 9
+    &__imagen-seis
+      width: 100%
+      margin-top: 1rem
+    &__siete
+      grid-column: 2 / 5
+      grid-row: 10 / 12
+    &__imagen-siete
+      width: 90%
+    &__ocho
+      grid-column: 5 / 8
+      grid-row: 11 / 13
+    &__imagen-ocho
+      width: 100%
+    &__nueve
+      grid-column: 2 / 5
+      grid-row: 14 / 17
+    &__imagen-nueve
+      width: 90%
+      margin-left: .8rem
+    &__diez
+      grid-column: 5 / 8
+      grid-row: 14 / 18
+    &__imagen-diez
+      width: 100%
+    &__once
+      grid-column: 2 / 5
+      grid-row: 17 / 19
+    &__imagen-once
+      width: 77%
+    &__doce
+      grid-column: 4 / 7
+      grid-row: 17 / 20
+      margin-left: 1rem
+    &__imagen-doce
+      width: 100%
+    &__trece
+      grid-column: 2 / 5
+      grid-row: 20 / 23
+    &__imagen-trece
+      width: 70%
+    &__catorce
+      grid-column: 4 / 8
+      grid-row: 21 / 26
+    &__imagen-catorce
+      width: 70%
+      margin-left: 1rem
+      border: 10px solid $verde

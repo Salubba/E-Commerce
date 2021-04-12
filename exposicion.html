@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>exposicion</title>
+    <link rel="icon" type="image/png" href="img/home/logofrag4.jpg">
+    <meta name="theme-color" content="#3c790a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Tu nombre">
+    <meta name="generator" content="Clojure">
+    <meta name="keywords" content="html, css, javascript">
+    <meta name="description" content="my description...">
+    <meta property="og:image" content="img/screenshot.png">
+    <meta property="og:title" content="The Rock">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@cuenta">
+    <meta name="twitter:creator" content="@cuenta">
+    <meta property="og:image:secure_url" content="https://...">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!--CSS-->
+    <link href="css/mobile.css" rel="stylesheet" media="all and (max-width: 600px)">
+    <link href="css/desktop.css" rel="stylesheet" media="all and (min-width: 600px)">
+    <!--Javascript para mostrar menu cuando hacemos clic en el boton menu hamburguesa-->
+    <script src="https://cdn.jsdelivr.net/gh/tanrax/FFNM@1.4.0/dist/ffnm.min.js" integrity="sha384-WsAoFj8H5Jl3+nG7ON5XXiozrADpSLshx/XdN7xu2GUVkJEZB5C3AGrFtdi6tARh" crossorigin="anonymous"></script>
+    <!--Animacion Fragmentos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__logo">
+            <a href="index.html" class="header__logo">
+                <img class="imagen__logo" src="img/header/logoDos.jpg" alt="logo">
+            </a>
+        </div>
+        <nav id="nav" class="nav")"> <!--IMPORTANTE EL id-->
+        <ul class="nav__ul">
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorUno" href="collage.html">COLLAGE</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorUno" href="hipnoticBox.html">HIPNOTIC BOX</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorUno" href="exposicion.html">EXPOSICIÓN</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link-colorDos animate__animated animate__slideInDown" href="contacto.html">CONTACTO</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorTres" href="sobreMi.html">SOBRE MI</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link nav__link-colorTres" href="institutoBelleza.html">INSTITUTO de BELLEZA</a>
+            </li>
+        </ul>
+        <div class="nav__redes">
+            <a href="https://www.instagram.com/institutodebellezaexperimental/" target="_blank">
+                <img class="nav__logo-instagram" src="img/header/instaBlack.png" alt="icono instagram">
+            </a>
+            <a href="https://www.facebook.com/LAS-Grecas-BAR-451911351660079/" target="_blank">
+                <img class="nav__logo-facebook" src="img/header/faceBlack.png" alt="icono facebook">
+            </a>
+        </div>
+        </nav>
+        <!--Boton hamburguesa-->
+        <a is-click="class:toggle('nav--ver', '#nav')" class="nav__abrir-menu" href="#">
+            <button id="hamburger" class="hamburger hamburger--collapse" type="button" is-click="class:toggle('is-active', '#hamburger')">
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </a>
+
+    </div>
+</header>
+<body>
+<section class="exposicion container">
+    <h1 class="exposicion__titulo animate__animated animate__slideInLeft">EXPOSICIÓN&nbsp;</h1>
+    <p class="exposicion__texto">
+            Gran parte de mis creaciones, collages, hipnotic box y muebles customizados se pueden observar, disfrutar y adquirir en el local que dirijo junto a mi pareja. Estan expuestas en cada uno de los rincones del bar creando una atmosfera muy especial.
+    </p>
+    <div class="exposicion__contenido">
+        <div class="exposicion__columna">
+            <hr class="separacion">
+            <div class="exposicion__imagen">
+                <img class="exposicion__imagen-uno" src="img/exposicion/bar1.jpg" alt="Foto fachada Bar Las Grecas">
+            </div>
+            <div class="exposicion__combo-uno">
+                <img  class="exposicion__combo-imgdos" src="img/exposicion/bar2.jpg" alt="Foto interior del Bar Las Grecas">
+                <img  class="exposicion__combo-imgtres" src="img/exposicion/bar3.jpg" alt="Foto interior del Bar Las Grecas">
+            </div>
+        </div>
+        <div class="exposicion__columna">
+            <div class="exposicion__imagen">
+                <img  class="exposicion__imagen-cuatro" src="img/exposicion/bar5.jpg" alt="Foto interior del Bar Las Grecas">
+            </div>
+            <div class="exposicion__imagen">
+                <img class="exposicion__imagen-cinco" src="img/exposicion/bar6.jpg" alt="Foto interior del Bar Las Grecas">
+            </div>
+        </div>
+        <div class="exposicion-columna">
+            <div class="exposicion__combo-dos">
+                <img  class="exposicion__combo-imgseis" src="img/exposicion/bar7.jpg" alt="Foto interior del Bar Las Grecas">
+                <img class="exposicion__combo-imgsiete" src="img/exposicion/bar8.jpg" alt="Foto interior del Bar Las Grecas">
+            </div>
+            <div class="exposicion__imagen">
+                <img class="exposicion__imagen-ocho" src="img/exposicion/bar9.jpg" alt="Foto interior del Bar Las Grecas">
+            </div>
+        </div>
+    </div>
+        <div class="exposicion__ubicacion">
+            <div class="exposicion__mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.0391217558654!2d-0.3531140983506597!3d39.46844489068583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604894439f0519%3A0xaeb3bf51937df25c!2sLAS%20GRECAS%20BAR!5e0!3m2!1ses!2ses!4v1608163224509!5m2!1ses!2ses" width="310" height="290" frameborder="0"></iframe>
+            </div>
+            <div class="exposicion__ubicacion-sitio">
+                <img class="exposicion__ubicacion-icono" src="img/exposicion/localizacion.png" alt="Icono Ubicación">
+                <p class="exposicion__ubicacion-direccion">
+                        LAS GRECAS BAR<br>Rodríguez de Cepeda, 33<br>46021 Valencia<br>961 05 36 43
+                </p>
+            </div>
+        </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="footer__contenido">
+            <a class="footer__contenido-link-facebook" href="https://www.facebook.com/LAS-Grecas-BAR-451911351660079/" target="_blank">
+                <img class="footer__contenido-facebook" src="img/footer/faceGreen.png" alt="Icono de facebook">
+            </a>
+            <a class="footer__contenido-link-instagram" href="https://www.instagram.com/institutodebellezaexperimental/" target="_blank">
+                <img class="footer__contenido-instagram" src="img/footer/instaGreen.png" alt="Icono de instagram">
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
